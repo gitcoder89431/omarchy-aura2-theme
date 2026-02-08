@@ -19,6 +19,7 @@
 @define-color matrix-glow #c17ac8;
 @define-color matrix-edge #8464c6;
 @define-color matrix-fg #bdbdbd;
+@define-color matrix-soft-blue #6cb2c7;
 
 * {
   /* background-color: @background; */
@@ -38,16 +39,12 @@
 
 window#waybar  {
   background-color: alpha(@matrix-bg, 0.98);
-  background-image: linear-gradient(to bottom, alpha(@matrix-ink, 0.06) 1px, transparent 1px);
-  background-size: 1px 3px;
   color: @matrix-ink;
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 0 0 6px 6px;
   box-shadow: none;
   border-bottom: 3px solid alpha(@matrix-edge, 0.6);
-  border-left: 3px solid alpha(@matrix-edge, 0.6);
-  border-right: 3px solid alpha(@matrix-edge, 0.6);
 }
 
 #window {
@@ -166,19 +163,52 @@ padding-bottom: 0;
 #cpu,
 #memory,
 #pulseaudio {
-  border-left: 2px solid @matrix-edge;
+  border-left: none;
+  box-shadow: none;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 16%,
+    alpha(@matrix-edge, 0.85) 16%,
+    alpha(@matrix-edge, 0.85) 84%,
+    transparent 84%
+  );
+  background-repeat: no-repeat;
+  background-size: 2px 100%;
+  background-position: left center;
   padding: 0 4px 0 6px;
 
 }
 
 #network,
 #bluetooth {  
-  border-left: 2px solid @matrix-edge;
+  border-left: none;
+  box-shadow: none;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 16%,
+    alpha(@matrix-edge, 0.85) 16%,
+    alpha(@matrix-edge, 0.85) 84%,
+    transparent 84%
+  );
+  background-repeat: no-repeat;
+  background-size: 2px 100%;
+  background-position: left center;
   padding: 0 6px;
 }
 
 #group-tray-expander {
-  border-left: 2px solid @matrix-edge;
+  border-left: none;
+  box-shadow: none;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 16%,
+    alpha(@matrix-edge, 0.85) 16%,
+    alpha(@matrix-edge, 0.85) 84%,
+    transparent 84%
+  );
+  background-repeat: no-repeat;
+  background-size: 2px 100%;
+  background-position: left center;
   padding-left: 4px;
   margin-right: 4px;
 }
@@ -189,6 +219,7 @@ padding-bottom: 0;
   font-family: "DSEG7 Classic", "DSEG7 Classic Mini", "DSEG14 Classic", "DSEG14 Classic Mini", "DSEG7 Modern", "DSEG14 Modern", "DSEG7", "DSEG14", monospace;
   font-size: 13px;
   font-weight: 700;
+  color: #c7a06f;
 }
 
 #clock {
@@ -201,11 +232,26 @@ padding-bottom: 0;
   padding: 0px;
   margin: 0px;
   margin-right: 0px;
+  color: #54c59f;
 }
 
 #custom-omarchy {
 font-size: 16px;
 color: @matrix-edge;
+}
+
+#custom-voxtype,
+#custom-update,
+#custom-updatespacman,
+#mpris,
+#idle_inhibitor,
+#bluetooth,
+#network,
+#pulseaudio,
+#memory,
+#cpu,
+#battery {
+  color: @matrix-glow;
 }
 
 window#waybar label {
@@ -249,7 +295,7 @@ tooltip label {
 }
 
 #custom-voxtype.recording {
-  color: #c55858;
+  color: @matrix-glow;
 }
 
 @keyframes blink-recording {
@@ -268,7 +314,7 @@ tooltip label {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  color: @matrix-ink; 
+  color: @matrix-glow;
 }
 
 #idle_inhibitor.activated {
@@ -280,7 +326,7 @@ tooltip label {
 }
 
 #mpris {
-  color: @matrix-ink;
+  color: @matrix-glow;
   margin: 0 6px;
 
 }
@@ -298,25 +344,16 @@ tooltip label {
   100% { color: @matrix-ink; }
 }
 
+#battery {
+  color: #54c59f;
+}
+
 #battery.warning {
-  color: @matrix-ink;
+  color: #54c59f;
 }
 
-@keyframes blink2 {
-  to {
-    background-color: transparent;
-    color: #c7a06f;
-  }
-}
-
-#battery.critical:not(.charging) {
-  background-color: transparent;
-  color: @matrix-ink;
-  animation-name: blink2;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#battery.critical {
+  color: #c55858;
 }
 
 #memory:hover,

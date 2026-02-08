@@ -111,7 +111,7 @@
   },
   "cpu": {
     "interval": 2,
-    "format": "󰍛:{icon}",
+    "format": "󰍛:<span color='#6cb2c7'>{icon}</span>",
     "format-icons": [
       "󰋙",
       "󰫃",
@@ -136,7 +136,7 @@
   },
   "memory": {
     "interval": 2,
-    "format": ":{icon}",
+    "format": ":<span color='#6cb2c7'>{icon}</span>",
     "format-icons": [
       "󰋙",
       "󰫃",
@@ -221,7 +221,7 @@
     "on-click": "omarchy-menu power",
     "states": {
       "warning": 20,
-      "critical": 10
+      "critical": 19
     }
   },
   "bluetooth": {
@@ -232,12 +232,12 @@
     "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
-    "format": "󰕾:{icon}",
+    "format": "󰕾:<span color='#6cb2c7'>{icon}</span>",
     "on-click": "omarchy-launch-or-focus-tui wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
-    "format-muted": "󰋙",
+    "format-muted": "󰕾:<span color='#6cb2c7'>󰋙</span>",
     "format-icons": [
       "󰋙",
       "󰫃",
