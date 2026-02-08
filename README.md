@@ -17,7 +17,7 @@ omarchy-theme-install https://github.com/gitcoder89431/omarchy-aura2-theme
 Then set it (or re-set it later):
 
 ```bash
-omarchy-theme-set <theme-folder-name>
+omarchy-theme-set aura2
 ```
 
 Notes:
@@ -34,7 +34,7 @@ theme-manager set <theme-folder-name> -w
 ```
 
 Useful commands:
-- `theme-manager set <theme-folder-name> -w` applies theme plus the theme's `waybar-theme/`.
+- `theme-manager set aura2 -w` applies theme plus the theme's `waybar-theme/`.
 - `theme-manager waybar auto` reapplies only the current theme's Waybar config.
 - `theme-manager` opens the interactive picker.
 
