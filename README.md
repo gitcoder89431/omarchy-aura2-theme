@@ -30,7 +30,7 @@ ThemeManager+ support is useful, but treat this path as beta/experimental.
 
 ```bash
 theme-manager install https://github.com/gitcoder89431/omarchy-aura2-theme
-theme-manager set <theme-folder-name> -w
+theme-manager set aura2 -w
 ```
 
 Useful commands:
