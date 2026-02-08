@@ -12,13 +12,13 @@
 * 
 * */
 
-@import "../omarchy/current/theme/waybar.css";
+@import "../waybar.css";
 
-@define-color matrix-bg #0f191c;
-@define-color matrix-ink #409931;
-@define-color matrix-glow #c1ff8a;
-@define-color matrix-edge #11ff25;
-@define-color matrix-fg #409931;
+@define-color matrix-bg #15141b;
+@define-color matrix-ink #bdbdbd;
+@define-color matrix-glow #c17ac8;
+@define-color matrix-edge #8464c6;
+@define-color matrix-fg #bdbdbd;
 
 * {
   /* background-color: @background; */
@@ -88,7 +88,7 @@ padding-bottom: 2px;
 #workspaces button {
     min-width: 18px;
     min-height: 12px;
-    padding: 2 6px;
+    padding: 2px 6px;
     margin: 0 6px;
     border-radius: 2px;
     background-color: alpha(@matrix-ink, 0.12);
@@ -262,7 +262,7 @@ tooltip label {
 }
 
 #custom-voxtype.recording {
-  color: #a55555;
+  color: #c55858;
 }
 
 @keyframes blink-recording {
@@ -286,7 +286,7 @@ tooltip label {
 
 #idle_inhibitor.activated {
   
-  color: #ffd700;
+  color: #c7a06f;
   animation-name: blink-inhibitor;
   animation-duration: 1s;
 
@@ -318,7 +318,7 @@ tooltip label {
 @keyframes blink2 {
   to {
     background-color: transparent;
-    color: #ffd700;
+    color: #c7a06f;
   }
 }
 

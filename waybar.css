@@ -12,24 +12,24 @@
 * 
 * */
 
-@define-color background #0f191c;
-@define-color foreground #11ff25;
+@define-color background #15141b;
+@define-color foreground #bdbdbd;
 
-@define-color color0 #688060;
-@define-color color2 #faff00;
-@define-color color3 #90d762;
-@define-color color4 #11ff25;
-@define-color color5 #c1ff8a;
-@define-color color6 #4f7e7e;
-@define-color color7 #409931;
-@define-color color8 #ffd700;
-@define-color color9 #688060;
-@define-color color10 #faff00;
-@define-color color11 #90d762;
-@define-color color12 #11ff25;
-@define-color color13 #c1ff8a;
-@define-color color14 #4f7e7e;
-@define-color color15 #507350;
+@define-color color0 #15141b;
+@define-color color2 #54c59f;
+@define-color color3 #c7a06f;
+@define-color color4 #8464c6;
+@define-color color5 #c17ac8;
+@define-color color6 #6cb2c7;
+@define-color color7 #bdbdbd;
+@define-color color8 #6d6d6d;
+@define-color color9 #c55858;
+@define-color color10 #54c59f;
+@define-color color11 #c7a06f;
+@define-color color12 #8464c6;
+@define-color color13 #c17ac8;
+@define-color color14 #6cb2c7;
+@define-color color15 #bdbdbd;
 
 /*
 *      )                                     
