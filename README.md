@@ -1,68 +1,82 @@
-# Omarchy Phosphor OS Theme
+# Omarchy Aura2 Theme
 
-A phosphor-green, CRT-inspired dark theme grounded in Matrix Base16 tones with vivid neon accents and soft terminal-glow contrast.
+Aura2 is a soft dark Aura palette for Omarchy with tuned Hyprland, Waybar, Hyprlock, and terminal/app themes.
 
 ## Preview
 
 ![Theme preview](preview.png)
 
-## Install
+## Install (Regular Omarchy)
 
-Use the Omarchy theme installer:
+Install from GitHub with Omarchy's native installer:
 
 ```bash
-omarchy-theme-install https://github.com/oldjobobo/omarchy-phosphor-os-theme
+omarchy-theme-install https://github.com/<your-user>/omarchy-aura2-theme
 ```
 
-## What's included
+Then set it (or re-set it later):
 
-- Hyprland rules and opacity tuning (`hyprland.conf`)
-- Hyprlock styling (`hyprlock.conf`)
-- Waybar colors (`waybar.css`, `waybar-theme`)
-- Terminals: Alacritty (`alacritty.toml`), Kitty (`kitty.conf`), Ghostty (`ghostty.conf`), Warp (`warp.yaml`)
-- Shell/tools: Fish colors (`colors.toml`), Walker (`walker.css`)
-- Apps/UI: GTK (`gtk.css`), Chromium (`chromium.theme`), Wofi (`wofi.css`)
-- System tools: btop (`btop.theme`), mako (`mako.ini`), SwayOSD (`swayosd.css`)
-- Extras: Vencord (`vencord.theme.css`), Zed (`aether.zed.json`, `aether.override.css`), Neovim (`neovim.lua`), Icons (`icons.theme`)
+```bash
+omarchy-theme-set <theme-folder-name>
+```
 
-## Wallpapers
+Notes:
+- `omarchy-theme-install` usually activates the theme automatically.
+- Use `omarchy-theme-list` to confirm the exact folder/theme name.
 
-<table>
-  <tr>
-    <td><img src="backgrounds/wallhaven-0p52pj.png" width="220" alt="wallhaven-0p52pj"></td>
-    <td><img src="backgrounds/wallhaven-1pwe63.png" width="220" alt="wallhaven-1pwe63"></td>
-    <td><img src="backgrounds/wallhaven-1qppl9.jpg" width="220" alt="wallhaven-1qppl9"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/wallhaven-39mjxd.png" width="220" alt="wallhaven-39mjxd"></td>
-    <td><img src="backgrounds/wallhaven-85pjk1.png" width="220" alt="wallhaven-85pjk1"></td>
-    <td><img src="backgrounds/wallhaven-d6m9xg.png" width="220" alt="wallhaven-d6m9xg"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/wallhaven-l8x6xr.png" width="220" alt="wallhaven-l8x6xr"></td>
-    <td><img src="backgrounds/wallhaven-nz1wdg.png" width="220" alt="wallhaven-nz1wdg"></td>
-    <td><img src="backgrounds/wallhaven-oggvw9.jpg" width="220" alt="wallhaven-oggvw9"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/wallhaven-oxrj2m.png" width="220" alt="wallhaven-oxrj2m"></td>
-    <td><img src="backgrounds/wallhaven-pkogdp.jpg" width="220" alt="wallhaven-pkogdp"></td>
-    <td><img src="backgrounds/wallhaven-vq3v2m.jpg" width="220" alt="wallhaven-vq3v2m"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/wallhaven-wevpoq.png" width="220" alt="wallhaven-wevpoq"></td>
-    <td><img src="backgrounds/wallhaven-xlpx3z.jpg" width="220" alt="wallhaven-xlpx3z"></td>
-  </tr>
-</table>
+## Install (ThemeManager+)
 
-## Requirements
+If you use ThemeManager+:
 
-- A Hyprland-based desktop environment
-- Waybar for the status bar
-- Nerd Font Propo family (Hack, CaskaydiaMono, or JetBrains Nerd Font)
-- DSEG7 or DSEG14 fonts for the segmented clock
-- Yaru-sage icon theme
+```bash
+theme-manager install https://github.com/<your-user>/omarchy-aura2-theme
+theme-manager set <theme-folder-name> -w
+```
 
-## Notes
+Useful commands:
+- `theme-manager set <theme-folder-name> -w` applies theme plus the theme's `waybar-theme/`.
+- `theme-manager waybar auto` reapplies only the current theme's Waybar config.
+- `theme-manager` opens the interactive picker.
 
-- Palette derived from the Matrix Base16 colorscheme
-- Wallpapers are from Wallhaven and sized to suit the bright-green phosphor palette
+## Theme Structure
+
+This repo is organized to work with Omarchy and ThemeManager+:
+
+```text
+omarchy-aura2-theme/
+├── colors.toml
+├── hyprland.conf
+├── hyprlock.conf
+├── waybar.css
+├── waybar-theme/
+│   ├── config.jsonc
+│   └── style.css
+├── backgrounds/
+└── ... app/theme files
+```
+
+Key paths:
+- `waybar-theme/` provides per-theme Waybar config.
+- `hyprlock.conf` defines lockscreen palette variables.
+- `colors.toml` drives generated template-based outputs in Omarchy.
+
+## Included
+
+- Hyprland (`hyprland.conf`)
+- Hyprlock (`hyprlock.conf`)
+- Waybar (`waybar.css`, `waybar-theme/`)
+- Terminals: Alacritty, Kitty, Ghostty, Warp
+- Notifications/UI: mako, SwayOSD, GTK, Wofi
+- Apps: Chromium, Vencord, Aether/Zed, Neovim theme config
+- Utilities: btop theme, Walker theme
+
+## Dependencies
+
+Recommended:
+- Nerd Font Propo family (CaskaydiaMono / Hack / JetBrains Mono Nerd Font Propo)
+- DSEG font family for segmented clock display (optional)
+
+## Credits
+
+- Based on the original phosphor structure and Omarchy theme conventions.
+- Thanks to @OldJobobo and contributors for the Waybar and ThemeManager+ compatibility improvements.
