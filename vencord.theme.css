@@ -13,22 +13,22 @@
 */
 
 :root {
-  --color00: #0f191c;
-  --color01: #688060;
-  --color02: #faff00;
-  --color03: #90d762;
-  --color04: #11ff25;
-  --color05: #c1ff8a;
-  --color06: #4f7e7e;
-  --color07: #409931;
-  --color08: #ffd700;
-  --color09: #688060;
-  --color10: #faff00;
-  --color11: #90d762;
-  --color12: #11ff25;
-  --color13: #c1ff8a;
-  --color14: #4f7e7e;
-  --color15: #507350;
+  --color00: #15141b;
+  --color01: #c55858;
+  --color02: #54c59f;
+  --color03: #c7a06f;
+  --color04: #8464c6;
+  --color05: #c17ac8;
+  --color06: #6cb2c7;
+  --color07: #bdbdbd;
+  --color08: #6d6d6d;
+  --color09: #c55858;
+  --color10: #54c59f;
+  --color11: #c7a06f;
+  --color12: #8464c6;
+  --color13: #c17ac8;
+  --color14: #6cb2c7;
+  --color15: #bdbdbd;
   --base00: var(--color00);
 
   /* Matrix surfaces */
@@ -100,7 +100,7 @@
   --mention-foreground: var(--mx-green) !important;
 
   /* Text */
-  --text-normal: #409931 !important;
+  --text-normal: #bdbdbd !important;
   --text-muted: color-mix(in srgb, var(--color01) 70%, var(--mx-3)) !important;
   --text-primary: var(--color07) !important;
   --text-secondary: color-mix(in srgb, var(--color07) 70%, var(--mx-4)) !important;
@@ -145,7 +145,7 @@
 /* Message text color override */
 :is(.theme-dark, .theme-darker, .theme-midnight, .visual-refresh)
   :is([class*="messageContent"], [class*="markup"]) {
-  color: #409931 !important;
+  color: #bdbdbd !important;
 }
 
 body {
@@ -217,8 +217,8 @@ a[data-list-item-id^="channels___"]:hover {
 /* Channel icon base */
 a[data-list-item-id^="channels___"] svg,
 a[data-list-item-id^="channels___"] svg path {
-  fill: color-mix(in srgb, #faff00 40%, var(--mx-1)) !important;
-  color: color-mix(in srgb, #faff00 40%, var(--mx-1)) !important;
+  fill: color-mix(in srgb, #54c59f 40%, var(--mx-1)) !important;
+  color: color-mix(in srgb, #54c59f 40%, var(--mx-1)) !important;
 }
 
 /* Channel name base (read / not selected) */
@@ -245,8 +245,8 @@ a[data-list-item-id^="channels___"][class*="modeUnread"] svg,
 a[data-list-item-id^="channels___"][class*="modeUnread"] svg path,
 [class*="modeUnread"] [class*="icon__"],
 [class*="modeUnread"] [class*="icon__"] path {
-  fill: #faff00 !important;
-  color: #faff00 !important;
+  fill: #54c59f !important;
+  color: #54c59f !important;
 }
 
 /* Unread channel name */
@@ -279,7 +279,7 @@ a[data-list-item-id^="channels___"][class*="modeUnread"] [class*="name"] * {
   background: var(--mx-1) !important;
   border: 1px solid color-mix(in srgb, var(--mx-green) 18%, transparent) !important;
   border-radius: 10px !important;
-  color: #409931 !important;
+  color: #bdbdbd !important;
 }
 
 /* Avoid double borders when reply bar expands the input */
@@ -303,17 +303,17 @@ a[data-list-item-id^="channels___"][class*="modeUnread"] [class*="name"] * {
 
 /* Chat input buttons (attach/gift/gif/etc) */
 [class*="scrollableContainer"] [class*="buttons__"] {
-  color: #409931 !important;
+  color: #bdbdbd !important;
 }
 
 [class*="scrollableContainer"] [class*="buttons__"] svg,
 [class*="scrollableContainer"] [class*="buttons__"] path {
-  color: #409931 !important;
+  color: #bdbdbd !important;
   fill: currentColor !important;
 }
 
 [class*="scrollableContainer"] [class*="buttons__"] [class*="sprite__"] {
-  color: #409931 !important;
+  color: #bdbdbd !important;
   filter: brightness(0) saturate(100%) invert(54%) sepia(35%) saturate(550%) hue-rotate(74deg) brightness(92%) contrast(96%) !important;
 }
 
@@ -413,7 +413,7 @@ div[class*="unreadMentionsIndicatorBottom"] > div {
 
 /* Channel list unread count: target the "N New" label in channel rows */
 #channels [class*="children__"] [data-text-variant="text-xs/semibold"] {
-  color: #faff00 !important;
+  color: #54c59f !important;
   text-transform: lowercase !important;
   letter-spacing: 0.02em !important;
 }
