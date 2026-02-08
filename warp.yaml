@@ -9,32 +9,32 @@
 #                |_|                                                                                                                         ███    ███                         
 #
 
-name: Aether
-accent: "#11ff25"
-cursor: "#11ff25"
-background: "#0f191c"
-foreground: "#507350"
+name: Aura Soft
+accent: "#8464c6"
+cursor: "#8464c6"
+background: "#15141b"
+foreground: "#bdbdbd"
 details: darker
 
 terminal_colors:
   normal:
-    black:   "#0f191c"
-    red:     "#688060"
-    green:   "#faff00"
-    yellow:  "#90d762"
-    blue:    "#11ff25"
-    magenta: "#c1ff8a"
-    cyan:    "#4f7e7e"
-    white:   "#409931"
+    black:   "#15141b"
+    red:     "#c55858"
+    green:   "#54c59f"
+    yellow:  "#c7a06f"
+    blue:    "#8464c6"
+    magenta: "#c17ac8"
+    cyan:    "#6cb2c7"
+    white:   "#bdbdbd"
   bright:
-    black:   "#ffd700"
-    red:     "#688060"
-    green:   "#faff00"
-    yellow:  "#90d762"
-    blue:    "#11ff25"
-    magenta: "#c1ff8a"
-    cyan:    "#4f7e7e"
-    white:   "#507350"
+    black:   "#6d6d6d"
+    red:     "#c55858"
+    green:   "#54c59f"
+    yellow:  "#c7a06f"
+    blue:    "#8464c6"
+    magenta: "#c17ac8"
+    cyan:    "#6cb2c7"
+    white:   "#bdbdbd"
 
 #      )                                     
 #   ( /(  (  (               )        )      

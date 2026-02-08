@@ -11,12 +11,12 @@
 
 */
 
-@define-color selected-text #ffd700;
-@define-color text #507350;
-@define-color base #0f191c;
-@define-color border #11ff25;
-@define-color foreground #507350;
-@define-color background #0f191c;
+@define-color selected-text #c17ac8;
+@define-color text #bdbdbd;
+@define-color base #15141b;
+@define-color border #8464c6;
+@define-color foreground #bdbdbd;
+@define-color background #15141b;
 
 window {
     background-color: transparent;
