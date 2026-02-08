@@ -11,7 +11,7 @@ Aura2 is a soft dark Aura palette for Omarchy with tuned Hyprland, Waybar, Hyprl
 Install from GitHub with Omarchy's native installer:
 
 ```bash
-omarchy-theme-install https://github.com/<your-user>/omarchy-aura2-theme
+omarchy-theme-install https://github.com/gitcoder89431/omarchy-aura2-theme
 ```
 
 Then set it (or re-set it later):
@@ -24,12 +24,12 @@ Notes:
 - `omarchy-theme-install` usually activates the theme automatically.
 - Use `omarchy-theme-list` to confirm the exact folder/theme name.
 
-## Install (ThemeManager+)
+## Install (ThemeManager+, Experimental)
 
-If you use ThemeManager+:
+ThemeManager+ support is useful, but treat this path as beta/experimental.
 
 ```bash
-theme-manager install https://github.com/<your-user>/omarchy-aura2-theme
+theme-manager install https://github.com/gitcoder89431/omarchy-aura2-theme
 theme-manager set <theme-folder-name> -w
 ```
 
@@ -40,7 +40,7 @@ Useful commands:
 
 ## Theme Structure
 
-This repo is organized to work with Omarchy and ThemeManager+:
+This repo is organized to work with Omarchy:
 
 ```text
 omarchy-aura2-theme/
