@@ -42,9 +42,9 @@ window#waybar  {
   color: @matrix-ink;
   transition-property: background-color;
   transition-duration: .5s;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0;
   box-shadow: none;
-  border-bottom: 3px solid alpha(@matrix-edge, 0.6);
+  border-bottom: none;
 }
 
 #window {
