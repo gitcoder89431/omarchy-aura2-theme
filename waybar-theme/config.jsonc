@@ -270,16 +270,6 @@
       "deactivated": "󰾪"
     }
   },
-  "custom/updatespacman": {
-    "format": "{}{icon}",
-    "return-type": "json",
-    "format-icons": {
-      "has-updates": " 󰏖",
-      "updated": "",
-    },
-    "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --no-zero-output"
-  },
   "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
@@ -293,7 +283,8 @@
       "idle_inhibitor",
       "custom/update",
       "custom/screenrecording-indicator",
-      "custom/updatespacman",
+      "custom/idle-indicator",
+      "custom/notification-silencing-indicator",
       "tray"
     ]
   },
@@ -305,6 +296,18 @@
     "on-click": "omarchy-cmd-screenrecord",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
+    "return-type": "json"
+  },
+  "custom/idle-indicator": {
+    "on-click": "omarchy-toggle-idle",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/idle.sh",
+    "signal": 9,
+    "return-type": "json"
+  },
+  "custom/notification-silencing-indicator": {
+    "on-click": "omarchy-toggle-notification-silencing",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/notification-silencing.sh",
+    "signal": 10,
     "return-type": "json"
   },
   "tray": {
