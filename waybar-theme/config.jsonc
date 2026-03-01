@@ -23,7 +23,8 @@
     "hyprland/workspaces"
   ],
   "modules-center": [
-    "clock"
+    "clock",
+    "custom/update"
   ],
   "modules-right": [
     "group/tray-expander",
